@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Anuncio con iFrame</title>
+    <style>
+        /* Estilo para el iFrame */
+        iframe {
+            width: 100%;
+            border: none;
+        }
+
+        /* iFrame tamaño para computadoras */
+        @media (min-width: 728px) {
+            iframe {
+                width: 728px;
+                height: 90px;
+            }
+        }
+
+        /* iFrame tamaño para celulares */
+        @media (max-width: 727px) {
+            iframe {
+                width: 300px;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Prueba de Anuncio</h1>
+    <p>Este es un ejemplo básico para visualizar el anuncio adaptable.</p>
+
+    <!-- Incluir el iFrame que contiene el anuncio -->
+    <iframe src="mianuncio.html" title="Anuncio Adaptable"></iframe>
+
+    <p>Fin de la página de prueba.</p>
+</body>
+</html>
